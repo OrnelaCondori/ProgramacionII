@@ -26,18 +26,19 @@ public class Main {
         test2.addAthleteParticipant(ath3);
         test2.addAthleteParticipant(ath4);
 
-        facilities.addTest(test1);
-        facilities.addTest(test2);
+        sede1.addTest(test1);
+        sede1.addTest(test2);
         facilities.setSede(sede1);
+
 
 
         //Desde instalación
         //Nombre del 3er atleta de la 2da prueba
         System.out.println("El nombre del tercer atleta de la segunda prueba es: ");
-        System.out.println(facilities.getTests().get(1).getAthleteParticipants().get(2).getName());
+        System.out.println(facilities.getSede().getTests().get(1).getAthleteParticipants().get(2).getName());
         //Código de la 2da prueba.
         System.out.println("El codigo de la segunda prueba es: ");
-        System.out.println(facilities.getTests().get(1).getCodigo());
+        System.out.println(facilities.getSede().getTests().get(1).getCodigo());
 
         System.out.println(" ");
 

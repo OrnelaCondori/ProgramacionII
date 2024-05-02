@@ -8,7 +8,6 @@ public class Facilities {
     private String location;
     private String name;
     private String type;
-    private List<Test> Tests;
     private Sede sede;
 
     public Facilities(String category, String location, String name, String type) {
@@ -16,7 +15,6 @@ public class Facilities {
         this.location = location;
         this.name = name;
         this.type = type;
-        Tests = new ArrayList<>();
     }
 
     public Sede getSede() {
@@ -59,14 +57,4 @@ public class Facilities {
         this.type = type;
     }
 
-    public List<Test> getTests() {
-        return Tests;
-    }
-
-    public void setTests(List<Test> tests) {
-        Tests = tests;
-    }
-    public void addTest(Test test){
-        Tests.add(test);
-    }
 }

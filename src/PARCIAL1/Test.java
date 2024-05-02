@@ -7,7 +7,8 @@ public class Test {
     private int codigo;
     private String titulo;
     private List<Athlete> athleteParticipants;
-    private Facilities facilities;
+    private Sede sede;
+
 
     public Test(int codigo, String titulo) {
         this.codigo = codigo;
@@ -39,11 +40,11 @@ public class Test {
         this.titulo = titulo;
     }
 
-    public Facilities getFacilities() {
-        return facilities;
+    public Sede getSede() {
+        return sede;
     }
 
-    public void setFacilities(Facilities facilities) {
-        this.facilities = facilities;
+    public void setSede(Sede sede) {
+        this.sede = sede;
     }
 }
